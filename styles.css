@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    display: none;
+}
+
+section:target {
+    display: block;
+}
+
+.styled-image {
+    display: block;
+    margin: 1rem auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+#about ul li {
+    margin: 1.5rem 0;
+}
+
+#about ul li a {
+    color: #0066cc;
+    text-decoration: none;
+}
+#about ul li a:hover {
+    text-decoration: underline;
+}
+#about img {
+    max-width: 600px;
+    display: block;
+    object-fit: cover;
+    margin: 1rem auto;
+    margin-bottom: 20px;
+}
+
+#work ul {
+    list-style-type: none;
+    padding: 0;
+}
+#work ul li {
+    margin: 1.5rem 0;
+}
+#work ul li a {
+    color: #0066cc;
+    text-decoration: none;
+}
+#work img {
+    max-width: 600px;
+    display: block;
+    object-fit: cover;
+    margin: 1rem auto;
+    margin-bottom: 20px;
+}
+#work ul li a:hover {
+    text-decoration: underline;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px; 
+    font-size: 12px;
+  }
+
+  
+#back-to-top {
+    display: none; /* Скрыта по умолчанию */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100; /* Поверх всего */
+    font-size: 18px;
+    background-color: #525457;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: opacity 0.3s; /* Плавный переход для появления/исчезновения */
+}
+
+#back-to-top:hover {
+    background-color: #77c1c8;
+}
+
+#back-to-top i {
+    margin-right: 5px;
+}
