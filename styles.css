@@ -208,11 +208,11 @@ footer {
 
 /* Стили для кнопки "Наверх" */
 #back-to-top {
-    display: none; /* Скрыта по умолчанию */
+    display: none; 
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 100; /* Выше всего */
+    z-index: 100; /* Поверх всего */
     font-size: 18px;
     background-color: #525457;
     color: white;
@@ -220,7 +220,7 @@ footer {
     border-radius: 5px;
     padding: 10px 15px;
     cursor: pointer;
-    transition: opacity 0.3s; /* Плавный переход для появления/исчезновения */
+    transition: opacity 0.3s; 
 }
 
 #back-to-top:hover {
