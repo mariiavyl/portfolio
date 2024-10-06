@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/41e908ea05.js" crossorigin="anonymous"></script>
@@ -11,62 +12,115 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#" onclick="showPage('about')">About</a></li>
-                <li><a href="#" onclick="showPage('work')">Work</a></li>
-                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li> 
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- Секция "About" -->
         <section id="about">
             <h1>About Me</h1>
             <img class="styled-image" src="img/me.png" alt="Profile Picture">
             <ul>
-            <li>I graduated from <strong>high school in 2015</strong> and subsequently enrolled at <strong><a href="https://etu.ru/en/university/" target="_blank">St. Petersburg Electrotechnical University “LETI”.</a></strong> I completed both my Bachelor's and Master's degrees there, specializing in <strong>Technical Systems Management.</strong></li>
-            <img src="img/leti.jpg" alt="leti">
-            <li> <strong>In 2018</strong>, I embarked on my professional journey by joining a <strong>children's programming school</strong>, where I nurtured young minds and fostered their interest in coding and technology.</li>
-            <img src="img/scratch.webp" alt="scratch">    
-            <li> <strong>In 2020</strong>, I transitioned to working at a <strong>design bureau</strong>, further honing my technical and management skills. My experience in this role allowed me to work on innovative projects and collaborate with industry experts.</li>
-            <img src="img/ship.gif" alt="ship">      
-            <li> <strong>From 2022</strong>, I contributed my expertise at <strong><a href="https://astanahub.com/en/service/" target="_blank">Astana Hub</a></strong>, where I was involved in various initiatives aimed at driving technological advancements and supporting start-ups.</li>
-            <img src="img/astana.jpg" alt="astana">     
-            <li> <strong>As of 2023</strong>, I have been residing in Lohja and pursuing further <strong>education at <a href="https://www.luksia.fi/" target="_blank">Luksia</a></strong>. My continuous learning and diverse experiences reflect my commitment to personal and professional growth in the field of technical systems management.</li>
-            <img src="img/luksia.jpg" alt="luksia">    
-        </ul>
+                <li>I graduated from <strong>high school in 2015</strong> and subsequently enrolled at <strong><a href="https://etu.ru/en/university/" target="_blank">St. Petersburg Electrotechnical University “LETI”</a></strong>. I completed both my Bachelor's and Master's degrees there, specializing in <strong>Technical Systems Management.</strong></li>
+                <img src="img/leti.jpg" alt="leti">
+                <li> <strong>In 2018</strong>, I embarked on my professional journey by joining a <strong>children's programming school</strong>, where I nurtured young minds and fostered their interest in coding and technology.</li>
+                <img src="img/scratch.webp" alt="scratch">
+                <li> <strong>In 2020</strong>, I transitioned to working at a <strong>design bureau</strong>, further honing my technical and management skills. My experience in this role allowed me to work on innovative projects and collaborate with industry experts.</li>
+                <img src="img/ship.gif" alt="ship">
+                <li> <strong>From 2022</strong>, I contributed my expertise at <strong><a href="https://astanahub.com/en/service/" target="_blank">Astana Hub</a></strong>, where I was involved in various initiatives aimed at driving technological advancements and supporting start-ups.</li>
+                <img src="img/astana.jpg" alt="astana">
+                <li> <strong>As of 2023</strong>, I have been residing in Lohja and pursuing further <strong>education at <a href="https://www.luksia.fi/" target="_blank">Luksia</a></strong>.</li>
+                <img src="img/luksia.jpg" alt="luksia">
+            </ul>
         </section>
+
+        <!-- Секция "Work" -->
         <section id="work">
             <h1>My Work</h1>
             <p>Here are some of my recent projects:</p>
             <ul>
                 <li><a href="https://mariiavyl.github.io/rocket/" target="_blank">Rocket JS</a> - My first project at Luksia School.</li>
                 <img src="img/rocket.png" alt="rocket">
-                <li><a href="https://club.astanahub.com/" target="_blank">Astana Hub</a> - A platform that I worked on, specifically for startups participating in acceleration programs at Astana Hub.</li> 
+                <li><a href="https://club.astanahub.com/" target="_blank">Astana Hub</a> - A platform that I worked on, specifically for startups participating in acceleration programs at Astana Hub.</li>
                 <img src="img/astanahub.png" alt="astanahub">
-                <li>At the design bureau, I worked as a designer for nuclear icebreakers. My main responsibilities included adjusting the schematics of various automated systems, such as fire alarms, emergency signals, and radiation monitoring systems.</li> 
+                <li>At the design bureau, I worked as a designer for nuclear icebreakers.</li>
                 <img src="img/ice.jpg" alt="ice">
             </ul>
         </section>
+
+        <!-- Секция "Tech Stack" -->
+        <section id="tech-stack">
+            <h1>Tech Stack</h1>
+            <table class="tech-table">
+                <tr>
+                    <td><i class="fas fa-project-diagram"></i><br>BPMN</td>
+                    <td><i class="fas fa-drafting-compass"></i><br>AutoCAD</td>
+                    <td><i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js"></i><br>HTML/CSS/JS</td>
+                </tr>
+                <tr>
+                    <td><i class="fab fa-node-js"></i><br>Node.js</td>
+                    <td><i class="fas fa-code"></i><br>C++</td>
+                    <td><i class="fas fa-database"></i><br>SQL</td>
+                </tr>
+            </table>
+
+            <h2>Languages</h2>
+            <div class="language-skill">
+                <p>English (B1)</p>
+                <div class="progress-bar">
+                    <div class="progress english"></div>
+                </div>
+            </div>
+            <div class="language-skill">
+                <p>Finnish (B1)</p>
+                <div class="progress-bar">
+                    <div class="progress finnish"></div>
+                </div>
+            </div>
+            <div class="language-skill">
+                <p>Russian (Native)</p>
+                <div class="progress-bar">
+                    <div class="progress russian"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Contact" -->
         <section id="contact">
             <h1>Contact Me</h1>
-            <p>Feel free to reach out to me through the following methods.</p>  
+            <p>Feel free to reach out to me through the following methods:</p>
             <div class="icon-container">
-            <a href="https://www.facebook.com/mariia.vylegzhanina/ " target="_blank" class="social-link">
-            <i class="fab fa-facebook fa-3x"></i>
-            </a>
-           
-            <a href=" https://www.linkedin.com/in/mvylegzhanina/" target="_blank" class="social-link">
-                <i class="fab fa-linkedin fa-3x"></i>
+                <a href="https://www.facebook.com/mariia.vylegzhanina/" target="_blank" class="social-link">
+                    <i class="fab fa-facebook fa-3x"></i>
                 </a>
-            <a href="https://github.com/mariiavyl" target="_blank" class="social-link">
-            <i class="fab fa-github fa-3x"></i>
-            </a>
-  
-            <a href="https://www.instagram.com/maripistefi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-link">
-            <i class="fab fa-instagram fa-3x"></i>
-            </a>
-  </div>
+                <a href="https://www.linkedin.com/in/mvylegzhanina/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+                <a href="https://github.com/mariiavyl" target="_blank" class="social-link">
+                    <i class="fab fa-github fa-3x"></i>
+                </a>
+                <a href="https://www.instagram.com/maripistefi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-link">
+                    <i class="fab fa-instagram fa-3x"></i>
+                </a>
+            </div>
         </section>
-        <button id="back-to-top" title="Go to top"><i class="fas fa-chevron-up"></i></button>
     </main>
+
+    <!-- Кнопка "Наверх" -->
+    <button id="back-to-top" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mariia Vylegzhanina. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/mvylegzhanina/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/mariiavyl" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/maripistefi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+        </div>
+    </footer>
 </body>
 </html>

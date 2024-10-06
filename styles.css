@@ -1,7 +1,12 @@
+/* Общие стили для всего сайта */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth; /* Включает плавную прокрутку */
 }
 
 header {
@@ -9,6 +14,10 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: fixed; /* Закреплено наверху */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Чтобы всегда быть на переднем плане */
 }
 
 nav ul {
@@ -25,25 +34,18 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-main {
-    padding: 2rem;
-}
-
+/* Отступы для секций, чтобы их содержимое не перекрывалось меню */
 section {
-    display: none;
+    padding: 50px 20px 20px; /* Добавляем сверху отступ под фиксированное меню */
 }
 
-section:target {
-    display: block;
-}
-
+/* Стили для изображения в секции "About" */
 .styled-image {
     display: block;
     margin: 1rem auto;
@@ -54,10 +56,12 @@ section:target {
     margin-bottom: 50px;
 }
 
+/* Стили для секции "About" */
 #about ul {
     list-style-type: none;
     padding: 0;
 }
+
 #about ul li {
     margin: 1.5rem 0;
 }
@@ -66,9 +70,11 @@ section:target {
     color: #0066cc;
     text-decoration: none;
 }
+
 #about ul li a:hover {
     text-decoration: underline;
 }
+
 #about img {
     max-width: 600px;
     display: block;
@@ -77,17 +83,25 @@ section:target {
     margin-bottom: 20px;
 }
 
+/* Стили для секции "Work" */
 #work ul {
     list-style-type: none;
     padding: 0;
 }
+
 #work ul li {
     margin: 1.5rem 0;
 }
+
 #work ul li a {
     color: #0066cc;
     text-decoration: none;
 }
+
+#work ul li a:hover {
+    text-decoration: underline;
+}
+
 #work img {
     max-width: 600px;
     display: block;
@@ -95,23 +109,110 @@ section:target {
     margin: 1rem auto;
     margin-bottom: 20px;
 }
-#work ul li a:hover {
+
+/* Стили для таблицы с технологиями в секции "Tech Stack" */
+.tech-table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.tech-table td {
+    padding: 20px;
+    width: 33%; /* Три столбца в ряду */
+    vertical-align: middle;
+}
+
+.tech-table i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Стили для шкал владения языками */
+.language-skill {
+    margin-bottom: 20px;
+    text-align: center; /* Центрирование текста */
+}
+
+.language-skill p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 25px;
+    margin: 0 auto; /* Центрирование полос */
+    max-width: 500px; /* Ограничение ширины */
+}
+
+.progress {
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    line-height: 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+.english {
+    width: 60%; /* Уровень B1 */
+    background-color: #77c1c8;
+}
+
+.finnish {
+    width: 60%; /* Уровень B1 */
+    background-color: #77c1c8;
+}
+
+.russian {
+    width: 100%; /* Родной язык */
+    background-color: #4caf50;
+}
+
+/* Стили для заголовков секций */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 20px; /* Добавляем отступ сверху */
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #77c1c8;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
     text-decoration: underline;
 }
 
-.icon-container {
-    display: flex;
-    gap: 10px; 
-    font-size: 12px;
-  }
-
-  
+/* Стили для кнопки "Наверх" */
 #back-to-top {
     display: none; /* Скрыта по умолчанию */
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 100; /* Поверх всего */
+    z-index: 100; /* Выше всего */
     font-size: 18px;
     background-color: #525457;
     color: white;
@@ -128,4 +229,10 @@ section:target {
 
 #back-to-top i {
     margin-right: 5px;
+}
+
+/* Специфические настройки для корректного отображения элементов в разных секциях */
+main {
+    flex: 1;
+    margin-top: 80px; /* Чтобы контент не заходил под фиксированное меню */
 }
