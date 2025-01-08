@@ -1,126 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+        position: relative; 
+    }
+    </style>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <main>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tech-stack">Tech Stack</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div id="about" class="container-fluid" style="padding:100px 20px;">
+    <h1>About me</h1>
+    <p>I graduated from <strong>high school in 2015</strong> and subsequently enrolled at <strong><a href="https://etu.ru/en/university/" target="_blank">St. Petersburg Electrotechnical University</a></strong>. I completed both my Bachelor's and Master's degrees there, specializing in <strong>Technical Systems Management.</strong></p>
+    <p><strong>In 2018</strong>, I embarked on my professional journey by joining a <strong>children's programming school</strong>, where I nurtured young minds and fostered their interest in coding and technology.</p>
+    <p><strong>In 2020</strong>, I transitioned to working at a <strong>design bureau</strong>, further honing my technical and management skills. My experience in this role allowed me to work on innovative projects and collaborate with industry experts.</p>
+    <p><strong>From 2022</strong>, I contributed my expertise at <strong><a href="https://astanahub.com/en/service/" target="_blank">Astana Hub</a></strong>, where I was involved in various initiatives aimed at driving technological advancements and supporting start-ups.</p>
+    <p><strong>As of 2023</strong>, I have been residing in Lohja and pursuing further <strong>education at <a href="https://www.luksia.fi/" target="_blank">Luksia</a></strong>.</p>
+
+    <div id="about-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#about-carousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#about-carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#about-carousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/leti.jpg" alt="LETI" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>St. Petersburg Electrotechnical University</h3>
+                    <p>I completed both my Bachelor's and Master's degrees there</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/astana.jpg" alt="Astana Hub" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>Astana Hub</h3>
+                    <p>My last place of work</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/luksia.jpg" alt="Luksia" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>Luksia</h3>
+                    <p>This is where I am currently studying</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#about-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#about-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+  
+    <div id="work" class="container-fluid" style="padding:100px 20px;">
+        <h1>My work</h1>
+        <div class="container mt-3">
+          <!-- Карточка 1 -->
+          <div class="d-flex justify-content-center mb-4">
+            <div class="card" style="width: 400px;">
+              <img class="card-img-top" src="img/rocket.png" alt="Rocket" style="width: 100%;">
+              <div class="card-body">
+                <h2>Rocket JS</h2>
+                <p>My first project at Luksia School</p>
+                <a href="https://mariiavyl.github.io/rocket/" class="btn btn-primary" target="_blank">See project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Карточка 2 -->
+          <div class="d-flex justify-content-center mb-4">
+            <div class="card" style="width: 400px;">
+              <img class="card-img-top" src="img/astanahub.png" alt="Astana Hub" style="width: 100%;">
+              <div class="card-body">
+                <h2>Astana Hub</h2>
+                <p>A platform for startups participating in acceleration programs</p>
+                <a href="https://club.astanahub.com/" class="btn btn-primary" target="_blank">See project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Карточка 3 -->
+          <div class="d-flex justify-content-center">
+            <div class="card" style="width: 400px;">
+              <img class="card-img-top" src="img/ice2.jpg" alt="Icebreaker" style="width: 100%;">
+              <div class="card-body">
+                <h2>Design bureau</h2>
+                <p>At the design bureau, I worked as a designer for nuclear icebreakers</p>
+                <a href="https://en.wikipedia.org/wiki/Project_22220_icebreaker" class="btn btn-primary" target="_blank">Icebreaker 22220</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  
+  <div id="tech-stack" class="container-fluid" style="padding:50px 20px;">
+    <h1>Tech Stack</h1>
+    <br>
+    <div class="container text-center mt-3">
+        <div class="row mb-4">
+          <div class="col">
+            <i class="fas fa-project-diagram fa-2x"></i>
+            <br><span>BPMN</span>
+          </div>
+          <div class="col">
+            <i class="fas fa-drafting-compass fa-2x"></i>
+            <br><span>AutoCAD</span>
+          </div>
+          <div class="col">
+            <i class="fab fa-html5 fa-2x"></i>
+            <i class="fab fa-css3-alt fa-2x"></i>
+            <i class="fab fa-js fa-2x"></i>
+            <br><span>HTML/CSS/JS</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <i class="fab fa-php fa-2x"></i>
+            <br><span>PHP</span>
+          </div>
+          <div class="col">
+            <i class="fas fa-code fa-2x"></i>
+            <br><span>C++</span>
+          </div>
+          <div class="col">
+            <i class="fas fa-database fa-2x"></i>
+            <br><span>SQL</span>
+          </div>
+        </div>
+      </div>
+      
+    <br>
+    <h2 class="text-center">Languages</h2>
+    <div class="mb-3 mt-3">
+        <p>English (B2)</p>
+        <div class="progress">
+            <div class="progress-bar bg-primary" style="width: 65%;"></div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <p>Finnish (B2)</p>
+        <div class="progress">
+            <div class="progress-bar bg-primary" style="width: 65%;"></div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <p>Russian (Native)</p>
+        <div class="progress">
+            <div class="progress-bar bg-success" style="width: 100%;"></div>
+        </div>
+    </div>
+  </div>
+
+  <div id="contact" class="container-fluid" style="padding:20px;">
+    <h1>Contact me</h1>
+    <p>Feel free to reach out to me through the following methods:</p>
+    <div class="d-flex justify-content-around">
+        <a href="https://www.facebook.com/mariia.vylegzhanina/" target="_blank" class="text-primary">
+            <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mvylegzhanina/" target="_blank" class="text-primary">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/mariiavyl" target="_blank" class="text-dark">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/maripistefi" target="_blank" class="text-danger">
+            <i class="fab fa-instagram fa-2x"></i>
+        </a>
+    </div>
+  </div>
+
+
+  <button id="back-to-top" title="Go to top" class="btn btn-primary position-fixed bottom-0 end-0 m-3">
+    <i class="fas fa-chevron-up"></i>
+</button>
+</main>
+    <footer class="bg-dark text-white text-center py-3 mt-auto w-100">
+        <p>&copy; 2024 Mariia Vylegzhanina. All rights reserved.</p>
+     </footer>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/41e908ea05.js" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#tech-stack">Tech Stack</a></li> 
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- Секция "About" -->
-        <section id="about">
-            <h1>About Me</h1>
-            <img class="styled-image" src="img/me.png" alt="Profile Picture">
-            <ul>
-                <li>I graduated from <strong>high school in 2015</strong> and subsequently enrolled at <strong><a href="https://etu.ru/en/university/" target="_blank">St. Petersburg Electrotechnical University “LETI”</a></strong>. I completed both my Bachelor's and Master's degrees there, specializing in <strong>Technical Systems Management.</strong></li>
-                <img src="img/leti.jpg" alt="leti">
-                <li> <strong>In 2018</strong>, I embarked on my professional journey by joining a <strong>children's programming school</strong>, where I nurtured young minds and fostered their interest in coding and technology.</li>
-                <img src="img/scratch.webp" alt="scratch">
-                <li> <strong>In 2020</strong>, I transitioned to working at a <strong>design bureau</strong>, further honing my technical and management skills. My experience in this role allowed me to work on innovative projects and collaborate with industry experts.</li>
-                <img src="img/ship.gif" alt="ship">
-                <li> <strong>From 2022</strong>, I contributed my expertise at <strong><a href="https://astanahub.com/en/service/" target="_blank">Astana Hub</a></strong>, where I was involved in various initiatives aimed at driving technological advancements and supporting start-ups.</li>
-                <img src="img/astana.jpg" alt="astana">
-                <li> <strong>As of 2023</strong>, I have been residing in Lohja and pursuing further <strong>education at <a href="https://www.luksia.fi/" target="_blank">Luksia</a></strong>.</li>
-                <img src="img/luksia.jpg" alt="luksia">
-            </ul>
-        </section>
-
-        <!-- Секция "Work" -->
-        <section id="work">
-            <h1>My Work</h1>
-            <p>Here are some of my recent projects:</p>
-            <ul>
-                <li><a href="https://mariiavyl.github.io/rocket/" target="_blank">Rocket JS</a> - My first project at Luksia School.</li>
-                <img src="img/rocket.png" alt="rocket">
-                <li><a href="https://club.astanahub.com/" target="_blank">Astana Hub</a> - A platform that I worked on, specifically for startups participating in acceleration programs at Astana Hub.</li>
-                <img src="img/astanahub.png" alt="astanahub">
-                <li>At the design bureau, I worked as a designer for nuclear icebreakers.</li>
-                <img src="img/ice2.jpg" alt="ice">
-            </ul>
-        </section>
-
-        <!-- Секция "Tech Stack" -->
-        <section id="tech-stack">
-            <h1>Tech Stack</h1>
-            <table class="tech-table">
-                <tr>
-                    <td><i class="fas fa-project-diagram"></i><br>BPMN</td>
-                    <td><i class="fas fa-drafting-compass"></i><br>AutoCAD</td>
-                    <td><i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js"></i><br>HTML/CSS/JS</td>
-                </tr>
-                <tr>
-                    <td><i class="fab fa-node-js"></i><br>Node.js</td>
-                    <td><i class="fas fa-code"></i><br>C++</td>
-                    <td><i class="fas fa-database"></i><br>SQL</td>
-                </tr>
-            </table>
-
-            <h2>Languages</h2>
-            <div class="language-skill">
-                <p>English (B1)</p>
-                <div class="progress-bar">
-                    <div class="progress english"></div>
-                </div>
-            </div>
-            <div class="language-skill">
-                <p>Finnish (B1)</p>
-                <div class="progress-bar">
-                    <div class="progress finnish"></div>
-                </div>
-            </div>
-            <div class="language-skill">
-                <p>Russian (Native)</p>
-                <div class="progress-bar">
-                    <div class="progress russian"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Секция "Contact" -->
-        <section id="contact">
-            <h1>Contact Me</h1>
-            <p>Feel free to reach out to me through the following methods:</p>
-            <div class="icon-container">
-                <a href="https://www.facebook.com/mariia.vylegzhanina/" target="_blank" class="social-link">
-                    <i class="fab fa-facebook fa-3x"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/mvylegzhanina/" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin fa-3x"></i>
-                </a>
-                <a href="https://github.com/mariiavyl" target="_blank" class="social-link">
-                    <i class="fab fa-github fa-3x"></i>
-                </a>
-                <a href="https://www.instagram.com/maripistefi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-link">
-                    <i class="fab fa-instagram fa-3x"></i>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Кнопка "Наверх" -->
-    <button id="back-to-top" title="Go to top"><i class="fas fa-chevron-up"></i></button>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Mariia Vylegzhanina. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="https://www.linkedin.com/in/mvylegzhanina/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/mariiavyl" target="_blank">GitHub</a>
-            <a href="https://www.instagram.com/maripistefi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-        </div>
-    </footer>
 </body>
 </html>
